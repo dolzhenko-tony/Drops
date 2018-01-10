@@ -21,6 +21,7 @@ extension PhotoEditorViewController {
     
     @objc func keyboardWillHide(notification: NSNotification) {
         isTyping = false
+        slider.isUserInteractionEnabled = true
         doneButton.isHidden = true
         hideToolbar(hide: false)
     }

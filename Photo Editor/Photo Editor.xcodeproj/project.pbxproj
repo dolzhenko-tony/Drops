@@ -45,6 +45,15 @@
 		059EA71D1EACB8790072C0FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059EA71C1EACB8790072C0FE /* AppDelegate.swift */; };
 		059EA7241EACB8790072C0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059EA7231EACB8790072C0FE /* Assets.xcassets */; };
 		059EA7271EACB8790072C0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 059EA7251EACB8790072C0FE /* LaunchScreen.storyboard */; };
+		3413FA34200689E7008AF0F6 /* SNSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2B200689E6008AF0F6 /* SNSlider.swift */; };
+		3413FA35200689E7008AF0F6 /* SNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2C200689E6008AF0F6 /* SNButton.swift */; };
+		3413FA36200689E7008AF0F6 /* SNTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2D200689E7008AF0F6 /* SNTextField.swift */; };
+		3413FA37200689E7008AF0F6 /* SNFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2E200689E7008AF0F6 /* SNFilter.swift */; };
+		3413FA38200689E7008AF0F6 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2F200689E7008AF0F6 /* UIImageExtension.swift */; };
+		3413FA39200689E7008AF0F6 /* PhotoEditor+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA30200689E7008AF0F6 /* PhotoEditor+Filters.swift */; };
+		3413FA3A200689E7008AF0F6 /* SNUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA31200689E7008AF0F6 /* SNUtils.swift */; };
+		3413FA3B200689E7008AF0F6 /* SNSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA32200689E7008AF0F6 /* SNSticker.swift */; };
+		3413FA3C200689E7008AF0F6 /* SNSliderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA33200689E7008AF0F6 /* SNSliderDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +97,15 @@
 		059EA7231EACB8790072C0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		059EA7261EACB8790072C0FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		059EA7281EACB8790072C0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3413FA2B200689E6008AF0F6 /* SNSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSlider.swift; sourceTree = "<group>"; };
+		3413FA2C200689E6008AF0F6 /* SNButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNButton.swift; sourceTree = "<group>"; };
+		3413FA2D200689E7008AF0F6 /* SNTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNTextField.swift; sourceTree = "<group>"; };
+		3413FA2E200689E7008AF0F6 /* SNFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNFilter.swift; sourceTree = "<group>"; };
+		3413FA2F200689E7008AF0F6 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		3413FA30200689E7008AF0F6 /* PhotoEditor+Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoEditor+Filters.swift"; sourceTree = "<group>"; };
+		3413FA31200689E7008AF0F6 /* SNUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNUtils.swift; sourceTree = "<group>"; };
+		3413FA32200689E7008AF0F6 /* SNSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSticker.swift; sourceTree = "<group>"; };
+		3413FA33200689E7008AF0F6 /* SNSliderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSliderDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +138,7 @@
 		059EA71B1EACB8790072C0FE /* Photo Editor */ = {
 			isa = PBXGroup;
 			children = (
+				3413FA2A200689D8008AF0F6 /* Filters */,
 				056513081EF489B4009EA38F /* PhotoEditorViewController.swift */,
 				056513091EF489B4009EA38F /* StickersViewController.swift */,
 				0565130A1EF489B4009EA38F /* ColorCollectionViewCell.swift */,
@@ -161,6 +180,22 @@
 				059EA7281EACB8790072C0FE /* Info.plist */,
 			);
 			path = "Photo Editor";
+			sourceTree = "<group>";
+		};
+		3413FA2A200689D8008AF0F6 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				3413FA30200689E7008AF0F6 /* PhotoEditor+Filters.swift */,
+				3413FA2C200689E6008AF0F6 /* SNButton.swift */,
+				3413FA2E200689E7008AF0F6 /* SNFilter.swift */,
+				3413FA2B200689E6008AF0F6 /* SNSlider.swift */,
+				3413FA33200689E7008AF0F6 /* SNSliderDataSource.swift */,
+				3413FA32200689E7008AF0F6 /* SNSticker.swift */,
+				3413FA2D200689E7008AF0F6 /* SNTextField.swift */,
+				3413FA31200689E7008AF0F6 /* SNUtils.swift */,
+				3413FA2F200689E7008AF0F6 /* UIImageExtension.swift */,
+			);
+			path = Filters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,23 +290,32 @@
 				056513261EF489B4009EA38F /* CropRectView.swift in Sources */,
 				056513231EF489B4009EA38F /* Protocols.swift in Sources */,
 				0565134C1EF489CD009EA38F /* PhotoEditor+Crop.swift in Sources */,
+				3413FA39200689E7008AF0F6 /* PhotoEditor+Filters.swift in Sources */,
 				056513491EF489CD009EA38F /* PhotoEditor+StickersViewController.swift in Sources */,
 				0565131D1EF489B4009EA38F /* EmojiCollectionViewCell.swift in Sources */,
 				056513271EF489B4009EA38F /* CropViewController.swift in Sources */,
 				0565134D1EF489CD009EA38F /* PhotoEditor+Font.swift in Sources */,
+				3413FA34200689E7008AF0F6 /* SNSlider.swift in Sources */,
 				0565131C1EF489B4009EA38F /* ColorsCollectionViewDelegate.swift in Sources */,
+				3413FA3B200689E7008AF0F6 /* SNSticker.swift in Sources */,
 				0565131E1EF489B4009EA38F /* EmojisCollectionViewDelegate.swift in Sources */,
 				0565131A1EF489B4009EA38F /* StickersViewController.swift in Sources */,
+				3413FA3C200689E7008AF0F6 /* SNSliderDataSource.swift in Sources */,
 				056513481EF489CD009EA38F /* PhotoEditor+Keyboard.swift in Sources */,
 				0565131B1EF489B4009EA38F /* ColorCollectionViewCell.swift in Sources */,
 				0565131F1EF489B4009EA38F /* StickerCollectionViewCell.swift in Sources */,
 				056513251EF489B4009EA38F /* CropView.swift in Sources */,
 				0565134A1EF489CD009EA38F /* PhotoEditor+UITextView.swift in Sources */,
 				056513241EF489B4009EA38F /* GradientView.swift in Sources */,
+				3413FA3A200689E7008AF0F6 /* SNUtils.swift in Sources */,
 				059EA71D1EACB8790072C0FE /* AppDelegate.swift in Sources */,
 				0565134B1EF489CD009EA38F /* PhotoEditor+Controls.swift in Sources */,
 				056513211EF489B4009EA38F /* UIImageView+Alpha.swift in Sources */,
+				3413FA37200689E7008AF0F6 /* SNFilter.swift in Sources */,
+				3413FA36200689E7008AF0F6 /* SNTextField.swift in Sources */,
+				3413FA35200689E7008AF0F6 /* SNButton.swift in Sources */,
 				056513291EF489B4009EA38F /* ResizeControl.swift in Sources */,
+				3413FA38200689E7008AF0F6 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
