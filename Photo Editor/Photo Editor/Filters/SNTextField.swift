@@ -113,7 +113,7 @@ extension SNTextField: UIGestureRecognizerDelegate {
         }
     }
     
-    func handlePan(_ recognizer:UIPanGestureRecognizer) {
+    @objc func handlePan(_ recognizer:UIPanGestureRecognizer) {
         
         if self.isFirstResponder == true { return }
         

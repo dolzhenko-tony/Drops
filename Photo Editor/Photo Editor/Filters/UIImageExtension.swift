@@ -65,7 +65,7 @@ extension UIImage {
             break
         }
         
-        var ctx = CGContext(data: nil,
+        let ctx = CGContext(data: nil,
                             width: Int(size.width),
                             height: Int(size.height), bitsPerComponent: cgImage!.bitsPerComponent,
                             bytesPerRow: 0,
@@ -80,7 +80,7 @@ extension UIImage {
             ctx?.draw(cgImage!, in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         }
         let cgimg: CGImage = ctx!.makeImage()!
-        var img = UIImage(cgImage: cgimg)
+        let img = UIImage(cgImage: cgimg)
 //        CGContextRelease(ctx!)
 //        CGImageRelease(cgimg)
         return img
