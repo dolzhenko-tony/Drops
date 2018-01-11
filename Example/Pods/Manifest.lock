@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   iOSPhotoEditor:
-    :commit: 0b4efbb7d1adb0b1a696a1851d544518564945a8
+    :commit: d2dea802ad905541160b7df2e56dcd8d879b92d4
     :git: https://github.com/dolzhenko-tony/photo-editor.git
 
 SPEC CHECKSUMS:

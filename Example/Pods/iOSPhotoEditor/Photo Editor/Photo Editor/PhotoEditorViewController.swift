@@ -82,7 +82,6 @@ public final class PhotoEditorViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.setImageView(image: image!)
         setupSlider()
         
         deleteView.layer.cornerRadius = deleteView.bounds.height / 2
