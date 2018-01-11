@@ -44,6 +44,7 @@ extension PhotoEditorViewController {
     @IBAction func drawButtonTapped(_ sender: Any) {
         isDrawing = true
         canvasImageView.isUserInteractionEnabled = false
+        slider.isUserInteractionEnabled = false
         doneButton.isHidden = false
         colorPickerView.isHidden = false
         hideToolbar(hide: true)
@@ -51,6 +52,7 @@ extension PhotoEditorViewController {
 
     @IBAction func textButtonTapped(_ sender: Any) {
         isTyping = true
+        slider.isUserInteractionEnabled = false
         let textView = UITextView(frame: CGRect(x: 0, y: canvasImageView.center.y,
                                                 width: UIScreen.main.bounds.width, height: 30))
         
@@ -75,6 +77,7 @@ extension PhotoEditorViewController {
         doneButton.isHidden = true
         colorPickerView.isHidden = true
         canvasImageView.isUserInteractionEnabled = true
+        slider.isUserInteractionEnabled = true
         hideToolbar(hide: false)
         isDrawing = false
     }
@@ -108,7 +111,7 @@ extension PhotoEditorViewController {
 
     //MAKR: helper methods
     
-    func image(_ image: UIImage, withPotentialError error: NSErrorPointer, contextInfo: UnsafeRawPointer) {
+    @objc func image(_ image: UIImage, withPotentialError error: NSErrorPointer, contextInfo: UnsafeRawPointer) {
         let alert = UIAlertController(title: "Image Saved", message: "Image successfully saved to Photos library", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -134,6 +137,19 @@ extension PhotoEditorViewController {
                 stickerButton.isHidden = true
             }
         }
+    }
+    
+}
+
+final class PassthroughView: UIImageView {
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        for view in self.subviews {
+            if !view.isHidden && view.point(inside: convert(point, to: view), with: event) {
+                return true
+            }
+        }
+        return false
     }
     
 }
