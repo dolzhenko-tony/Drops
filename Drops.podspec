@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Drops'
-  s.version          = '0.1'
+  s.version          = '0.1.0'
   s.summary          = 'Photo Editor supports drawing, writing text and adding stickers and emojis'
  
   s.description      = <<-DESC
