@@ -21,6 +21,7 @@ extension PhotoEditorViewController: UITextViewDelegate {
     }
     public func textViewDidBeginEditing(_ textView: UITextView) {
         isTyping = true
+        slider.isUserInteractionEnabled = false
         lastTextViewTransform =  textView.transform
         lastTextViewTransCenter = textView.center
         lastTextViewFont = textView.font!

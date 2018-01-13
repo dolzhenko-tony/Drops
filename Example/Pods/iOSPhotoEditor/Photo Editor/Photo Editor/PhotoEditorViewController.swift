@@ -16,7 +16,7 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     //To hold the drawings and stickers
-    @IBOutlet weak var canvasImageView: UIImageView!
+    @IBOutlet weak var canvasImageView: PassthroughView!
 
     @IBOutlet weak var topToolbar: UIView!
     @IBOutlet weak var bottomToolbar: UIView!
@@ -69,6 +69,8 @@ public final class PhotoEditorViewController: UIViewController {
     var imageViewToPan: UIImageView?
     var isTyping: Bool = false
     
+    var data:[SNFilter] = []
+    let slider:SNSlider = SNSlider(frame: CGRect(origin: CGPoint.zero, size: SNUtils.screenSize))
     
     var stickersViewController: StickersViewController!
 
@@ -80,7 +82,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.setImageView(image: image!)
+        setupSlider()
         
         deleteView.layer.cornerRadius = deleteView.bounds.height / 2
         deleteView.layer.borderWidth = 2.0
