@@ -2,21 +2,20 @@ PODS:
   - iOSPhotoEditor (0.5)
 
 DEPENDENCIES:
-  - iOSPhotoEditor (from `https://github.com/dolzhenko-tony/photo-editor.git`, branch `feature/snap-filters`)
+  - iOSPhotoEditor (from `https://github.com/dolzhenko-tony/photo-editor.git`)
 
 EXTERNAL SOURCES:
   iOSPhotoEditor:
-    :branch: feature/snap-filters
     :git: https://github.com/dolzhenko-tony/photo-editor.git
 
 CHECKOUT OPTIONS:
   iOSPhotoEditor:
-    :commit: d2dea802ad905541160b7df2e56dcd8d879b92d4
+    :commit: b822faaea91165255ca68e9104f0a6deb7466ae7
     :git: https://github.com/dolzhenko-tony/photo-editor.git
 
 SPEC CHECKSUMS:
   iOSPhotoEditor: f420c4476736a423ee5c32732d20e7ac4ca75e04
 
-PODFILE CHECKSUM: ef8c39858e03aa6fd6a846cfdc642be09b565ccc
+PODFILE CHECKSUM: 0f3d6c4367238e35c2774d308a9699425a5e404e
 
 COCOAPODS: 1.3.1
