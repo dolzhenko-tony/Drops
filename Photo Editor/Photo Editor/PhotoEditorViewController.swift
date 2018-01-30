@@ -142,7 +142,7 @@ open class PhotoEditorViewController: UIViewController {
         bottomGradient.isHidden = hide
     }
     
-    @IBAction public func continueButtonPressed(_ sender: Any) {
+    @IBAction open func continueButtonPressed(_ sender: Any) {
         let img = self.canvasView.toImage()
         photoEditorDelegate?.doneEditing(image: img)
         self.dismiss(animated: true, completion: nil)
