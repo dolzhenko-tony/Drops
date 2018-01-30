@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class PhotoEditorViewController: UIViewController {
+public class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
     @IBOutlet weak var canvasView: UIView!
@@ -38,6 +38,7 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     public var image: UIImage?
     /**

@@ -19,6 +19,7 @@
             <connections>
                 <outlet property="bottomGradient" destination="ZGa-1B-gkO" id="pYn-g8-ak7"/>
                 <outlet property="bottomToolbar" destination="87h-1G-t5q" id="Pzi-Dw-qOq"/>
+                <outlet property="cancelButton" destination="9an-1W-thw" id="MpO-pF-sFF"/>
                 <outlet property="canvasImageView" destination="n3p-yR-4xc" id="OED-1L-YMz"/>
                 <outlet property="canvasView" destination="S1Y-ZS-dct" id="p6I-kg-UUU"/>
                 <outlet property="clearButton" destination="Kpe-Ez-Cio" id="C0i-3L-kLI"/>
