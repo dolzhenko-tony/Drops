@@ -11,7 +11,7 @@ import UIKit
 open class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
-    @IBOutlet weak var canvasView: UIView!
+    @IBOutlet public weak var canvasView: UIView!
     //To hold the image
     @IBOutlet var imageView: UIImageView!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
