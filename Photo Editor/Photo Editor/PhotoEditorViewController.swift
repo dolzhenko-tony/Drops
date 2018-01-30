@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class PhotoEditorViewController: UIViewController {
+open class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
     @IBOutlet weak var canvasView: UIView!
@@ -76,12 +76,12 @@ public class PhotoEditorViewController: UIViewController {
     var stickersViewController: StickersViewController!
 
     //Register Custom font before we load XIB
-    public override func loadView() {
+    open override func loadView() {
         registerFont()
         super.loadView()
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupSlider()
         
