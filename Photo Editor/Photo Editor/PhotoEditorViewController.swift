@@ -39,6 +39,7 @@ open class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet public weak var continueButton: UIButton!
     
     public var image: UIImage?
     /**
