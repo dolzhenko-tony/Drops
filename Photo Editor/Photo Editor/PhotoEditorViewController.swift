@@ -141,6 +141,13 @@ open class PhotoEditorViewController: UIViewController {
         bottomToolbar.isHidden = hide
         bottomGradient.isHidden = hide
     }
+    
+    @IBAction public func continueButtonPressed(_ sender: Any) {
+        let img = self.canvasView.toImage()
+        photoEditorDelegate?.doneEditing(image: img)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension PhotoEditorViewController: ColorDelegate {
