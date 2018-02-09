@@ -49,6 +49,6 @@ protocol StickersViewControllerDelegate {
 /**
  - didSelectColor
  */
-protocol ColorDelegate {
+protocol ColorDelegate: class {
     func didSelectColor(color: UIColor)
 }

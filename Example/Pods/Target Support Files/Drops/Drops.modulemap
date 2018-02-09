@@ -1,0 +1,6 @@
+framework module Drops {
+  umbrella header "Drops-umbrella.h"
+
+  export *
+  module * { export * }
+}

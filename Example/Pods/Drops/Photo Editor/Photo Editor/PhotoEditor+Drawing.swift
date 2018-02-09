@@ -10,7 +10,7 @@ import UIKit
 
 extension PhotoEditorViewController {
     
-    override public func touchesBegan(_ touches: Set<UITouch>,
+    override open func touchesBegan(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
             swiped = false
@@ -30,7 +30,7 @@ extension PhotoEditorViewController {
         
     }
     
-    override public func touchesMoved(_ touches: Set<UITouch>,
+    override open func touchesMoved(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
             // 6
@@ -45,7 +45,7 @@ extension PhotoEditorViewController {
         }
     }
     
-    override public func touchesEnded(_ touches: Set<UITouch>,
+    override open func touchesEnded(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
             if !swiped {

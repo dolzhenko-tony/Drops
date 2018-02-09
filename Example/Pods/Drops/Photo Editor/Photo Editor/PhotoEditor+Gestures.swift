@@ -129,7 +129,7 @@ extension PhotoEditorViewController : UIGestureRecognizerDelegate  {
     }
     
     // to Override Control Center screen edge pan from bottom
-    override public var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return true
     }
     

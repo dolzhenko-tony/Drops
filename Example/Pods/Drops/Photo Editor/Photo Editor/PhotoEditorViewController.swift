@@ -8,10 +8,10 @@
 
 import UIKit
 
-public final class PhotoEditorViewController: UIViewController {
+open class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
-    @IBOutlet weak var canvasView: UIView!
+    @IBOutlet public weak var canvasView: UIView!
     //To hold the image
     @IBOutlet var imageView: UIImageView!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
@@ -38,6 +38,8 @@ public final class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet public weak var continueButton: UIButton!
     
     public var image: UIImage?
     /**
@@ -75,12 +77,12 @@ public final class PhotoEditorViewController: UIViewController {
     var stickersViewController: StickersViewController!
 
     //Register Custom font before we load XIB
-    public override func loadView() {
+    open override func loadView() {
         registerFont()
         super.loadView()
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupSlider()
         
@@ -139,6 +141,13 @@ public final class PhotoEditorViewController: UIViewController {
         bottomToolbar.isHidden = hide
         bottomGradient.isHidden = hide
     }
+    
+    @IBAction open func continueButtonPressed(_ sender: Any) {
+        let img = self.canvasView.toImage()
+        photoEditorDelegate?.doneEditing(image: img)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension PhotoEditorViewController: ColorDelegate {

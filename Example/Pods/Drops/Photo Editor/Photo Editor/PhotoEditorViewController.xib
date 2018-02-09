@@ -19,12 +19,14 @@
             <connections>
                 <outlet property="bottomGradient" destination="ZGa-1B-gkO" id="pYn-g8-ak7"/>
                 <outlet property="bottomToolbar" destination="87h-1G-t5q" id="Pzi-Dw-qOq"/>
+                <outlet property="cancelButton" destination="9an-1W-thw" id="MpO-pF-sFF"/>
                 <outlet property="canvasImageView" destination="n3p-yR-4xc" id="OED-1L-YMz"/>
                 <outlet property="canvasView" destination="S1Y-ZS-dct" id="p6I-kg-UUU"/>
                 <outlet property="clearButton" destination="Kpe-Ez-Cio" id="C0i-3L-kLI"/>
                 <outlet property="colorPickerView" destination="Cy8-ap-fH9" id="KJx-KY-rfM"/>
                 <outlet property="colorPickerViewBottomConstraint" destination="mok-x4-xHA" id="SKq-N5-bcn"/>
                 <outlet property="colorsCollectionView" destination="GaQ-XR-asZ" id="1rf-hU-0nn"/>
+                <outlet property="continueButton" destination="wNH-TU-KxG" id="t1m-VS-g6i"/>
                 <outlet property="cropButton" destination="Ghm-bq-BmY" id="f2D-02-o1D"/>
                 <outlet property="deleteView" destination="yAt-sK-1nK" id="0Jn-1A-WAT"/>
                 <outlet property="doneButton" destination="KxU-y4-Jwh" id="19z-FV-eWC"/>
@@ -61,7 +63,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MS-N5-3xY">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Doi-2Z-r5q">
                             <rect key="frame" x="198" y="0.0" width="165" height="60"/>
@@ -217,7 +219,7 @@
                     </constraints>
                 </view>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxU-y4-Jwh">
-                    <rect key="frame" x="323" y="12" width="40" height="32"/>
+                    <rect key="frame" x="323" y="20" width="40" height="32"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                     <size key="titleShadowOffset" width="1" height="0.0"/>
                     <state key="normal" title="Done">
@@ -281,7 +283,7 @@
                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="centerX" secondItem="HPk-Bg-V0q" secondAttribute="centerX" id="24Z-2f-Tyk"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="2tC-2e-oA6"/>
                 <constraint firstItem="Cy8-ap-fH9" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="6eK-mF-0OL"/>
-                <constraint firstItem="Ken-FP-TKb" firstAttribute="top" secondItem="3MS-N5-3xY" secondAttribute="top" constant="20" id="7uY-Cg-khW"/>
+                <constraint firstItem="Ken-FP-TKb" firstAttribute="top" secondItem="3MS-N5-3xY" secondAttribute="top" id="7uY-Cg-khW"/>
                 <constraint firstAttribute="trailing" secondItem="3MS-N5-3xY" secondAttribute="trailing" id="M86-Ia-XcZ"/>
                 <constraint firstItem="rLz-36-0xz" firstAttribute="top" secondItem="HPk-Bg-V0q" secondAttribute="top" id="RYD-1T-XNJ"/>
                 <constraint firstAttribute="trailing" secondItem="ZGa-1B-gkO" secondAttribute="trailing" id="SbH-L6-vj9"/>
@@ -289,15 +291,15 @@
                 <constraint firstAttribute="bottom" secondItem="87h-1G-t5q" secondAttribute="bottom" id="XH4-oO-47L"/>
                 <constraint firstItem="ZGa-1B-gkO" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="YYk-Vg-obo"/>
                 <constraint firstAttribute="trailing" secondItem="KxU-y4-Jwh" secondAttribute="trailing" constant="12" id="Z0h-d5-J2Z"/>
-                <constraint firstItem="Ken-FP-TKb" firstAttribute="top" secondItem="KxU-y4-Jwh" secondAttribute="top" constant="8" id="Z49-kg-RCf"/>
+                <constraint firstItem="Ken-FP-TKb" firstAttribute="top" secondItem="KxU-y4-Jwh" secondAttribute="top" id="Z49-kg-RCf"/>
                 <constraint firstAttribute="trailing" secondItem="Cy8-ap-fH9" secondAttribute="trailing" id="dlF-iN-Gjg"/>
                 <constraint firstAttribute="trailing" secondItem="S1Y-ZS-dct" secondAttribute="trailing" id="jwU-EC-jaR"/>
                 <constraint firstAttribute="trailing" secondItem="87h-1G-t5q" secondAttribute="trailing" id="kaD-bR-ZZt"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="centerY" secondItem="HPk-Bg-V0q" secondAttribute="centerY" id="lCZ-Hj-EUs"/>
                 <constraint firstAttribute="trailing" secondItem="rLz-36-0xz" secondAttribute="trailing" id="moc-tG-rwG"/>
                 <constraint firstAttribute="bottom" secondItem="Cy8-ap-fH9" secondAttribute="bottom" id="mok-x4-xHA"/>
-                <constraint firstAttribute="bottom" secondItem="yAt-sK-1nK" secondAttribute="bottom" constant="12" id="of3-AC-FQE"/>
                 <constraint firstItem="rLz-36-0xz" firstAttribute="leading" secondItem="HPk-Bg-V0q" secondAttribute="leading" id="orL-eE-RPq"/>
+                <constraint firstItem="Ken-FP-TKb" firstAttribute="bottom" secondItem="yAt-sK-1nK" secondAttribute="bottom" constant="12" id="swK-hg-2Tx"/>
                 <constraint firstAttribute="bottom" secondItem="ZGa-1B-gkO" secondAttribute="bottom" id="uXH-MJ-Z8t"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="centerX" secondItem="HPk-Bg-V0q" secondAttribute="centerX" id="uyk-kx-vrC"/>
                 <constraint firstItem="S1Y-ZS-dct" firstAttribute="height" secondItem="HPk-Bg-V0q" secondAttribute="height" id="wpb-El-gs7"/>

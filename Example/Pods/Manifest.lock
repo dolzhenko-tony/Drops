@@ -1,21 +1,22 @@
 PODS:
-  - iOSPhotoEditor (0.5)
+  - Drops (0.1.1)
 
 DEPENDENCIES:
-  - iOSPhotoEditor (from `https://github.com/dolzhenko-tony/photo-editor.git`)
+  - Drops (from `https://github.com/dolzhenko-tony/Drops.git`, branch `master`)
 
 EXTERNAL SOURCES:
-  iOSPhotoEditor:
-    :git: https://github.com/dolzhenko-tony/photo-editor.git
+  Drops:
+    :branch: master
+    :git: https://github.com/dolzhenko-tony/Drops.git
 
 CHECKOUT OPTIONS:
-  iOSPhotoEditor:
-    :commit: b822faaea91165255ca68e9104f0a6deb7466ae7
-    :git: https://github.com/dolzhenko-tony/photo-editor.git
+  Drops:
+    :commit: 378f5fc2df3066076b9b885b0c74ece5fe1e1303
+    :git: https://github.com/dolzhenko-tony/Drops.git
 
 SPEC CHECKSUMS:
-  iOSPhotoEditor: f420c4476736a423ee5c32732d20e7ac4ca75e04
+  Drops: ca4d8915658058b43b08c40948501cba0de0fe4b
 
-PODFILE CHECKSUM: 0f3d6c4367238e35c2774d308a9699425a5e404e
+PODFILE CHECKSUM: f8c958d7856ad7eca12e34454cf77244f3caa481
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0
