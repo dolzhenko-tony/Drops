@@ -151,7 +151,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="gradientFromtop" value="NO"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87h-1G-t5q">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87h-1G-t5q" customClass="BottomBarView" customModule="Photo_Editor" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZRl-89-gRO">
