@@ -19,7 +19,7 @@ open class PhotoEditorViewController: UIViewController {
     @IBOutlet weak var canvasImageView: PassthroughView!
 
     @IBOutlet weak var topToolbar: UIView!
-    @IBOutlet weak var bottomToolbar: UIView!
+    @IBOutlet weak var bottomToolbar: BottomBarView!
 
     @IBOutlet weak var topGradient: UIView!
     @IBOutlet weak var bottomGradient: UIView!
