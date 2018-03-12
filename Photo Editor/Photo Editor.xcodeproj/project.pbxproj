@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346331602056BF9500263AFD /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3463315F2056BF9500263AFD /* BottomBarView.swift */; };
 		34751954203DAEBC00A8A958 /* Photo_Editor.h in Headers */ = {isa = PBXBuildFile; fileRef = 34751952203DAEBC00A8A958 /* Photo_Editor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34751958203DAF0F00A8A958 /* PhotoEditor+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA30200689E7008AF0F6 /* PhotoEditor+Filters.swift */; };
 		34751959203DAF0F00A8A958 /* SNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3413FA2C200689E6008AF0F6 /* SNButton.swift */; };
@@ -97,6 +98,7 @@
 		3413FA31200689E7008AF0F6 /* SNUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNUtils.swift; sourceTree = "<group>"; };
 		3413FA32200689E7008AF0F6 /* SNSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSticker.swift; sourceTree = "<group>"; };
 		3413FA33200689E7008AF0F6 /* SNSliderDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSliderDataSource.swift; sourceTree = "<group>"; };
+		3463315F2056BF9500263AFD /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		34751950203DAEBC00A8A958 /* Photo_Editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Photo_Editor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34751952203DAEBC00A8A958 /* Photo_Editor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo_Editor.h; sourceTree = "<group>"; };
 		34751953203DAEBC00A8A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				056513331EF489C0009EA38F /* PhotoEditorViewController.xib */,
 				059EA7231EACB8790072C0FE /* Assets.xcassets */,
 				059EA7281EACB8790072C0FE /* Info.plist */,
+				3463315F2056BF9500263AFD /* BottomBarView.swift */,
 			);
 			path = "Photo Editor";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				34751970203DAF0F00A8A958 /* UIImage+Crop.swift in Sources */,
 				34751971203DAF0F00A8A958 /* ResizeControl.swift in Sources */,
 				34751972203DAF0F00A8A958 /* AppDelegate.swift in Sources */,
+				346331602056BF9500263AFD /* BottomBarView.swift in Sources */,
 				34751973203DAF0F00A8A958 /* PhotoEditor+Gestures.swift in Sources */,
 				34751974203DAF0F00A8A958 /* PhotoEditor+Drawing.swift in Sources */,
 				34751975203DAF0F00A8A958 /* PhotoEditor+Keyboard.swift in Sources */,
