@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GradientView: UIView {
+final class GradientView: UIView {
     
     @IBInspectable public var gradientFromtop: Bool = true
     
@@ -30,6 +30,11 @@ class GradientView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         gradientLayer.frame = bounds
+    }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let view = super.hitTest(point, with: event)
+        return view == self ? nil : view
     }
     
 }

@@ -2,21 +2,21 @@ PODS:
   - Drops (0.1.1)
 
 DEPENDENCIES:
-  - Drops (from `https://github.com/dolzhenko-tony/Drops.git`, branch `refactor/framework`)
+  - Drops (from `https://github.com/dolzhenko-tony/Drops.git`, branch `master`)
 
 EXTERNAL SOURCES:
   Drops:
-    :branch: refactor/framework
+    :branch: master
     :git: https://github.com/dolzhenko-tony/Drops.git
 
 CHECKOUT OPTIONS:
   Drops:
-    :commit: fd0b1618a7ec3936d5d16b1ca8e21f377bb0de9d
+    :commit: 08d3df6f01eddceaeaa610d4e87c4cf87f356c27
     :git: https://github.com/dolzhenko-tony/Drops.git
 
 SPEC CHECKSUMS:
   Drops: ca4d8915658058b43b08c40948501cba0de0fe4b
 
-PODFILE CHECKSUM: f5befbf73fecf9e0fcd8f0c65272038c57ec199c
+PODFILE CHECKSUM: f8c958d7856ad7eca12e34454cf77244f3caa481
 
 COCOAPODS: 1.4.0
