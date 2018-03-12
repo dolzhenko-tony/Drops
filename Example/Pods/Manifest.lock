@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Drops:
-    :commit: 08d3df6f01eddceaeaa610d4e87c4cf87f356c27
+    :commit: 89bc2cc6bbb42e1a3dbbb71b039efef8719d2c34
     :git: https://github.com/dolzhenko-tony/Drops.git
 
 SPEC CHECKSUMS:

@@ -8,15 +8,6 @@
 
 import UIKit
 
-final class BottomBarView: UIView {
-    
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let view = super.hitTest(point, with: event)
-        return view == self ? nil : view
-    }
-    
-}
-
 open class PhotoEditorViewController: UIViewController {
     
     /** holding the 2 imageViews original image and drawing & stickers */
