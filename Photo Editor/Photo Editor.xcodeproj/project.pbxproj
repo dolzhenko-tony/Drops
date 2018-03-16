@@ -49,7 +49,6 @@
 		3475197D203DAF2600A8A958 /* EmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0565132C1EF489C0009EA38F /* EmojiCollectionViewCell.xib */; };
 		3475197E203DAF2600A8A958 /* StickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056513321EF489C0009EA38F /* StickerCollectionViewCell.xib */; };
 		3475197F203DAF2600A8A958 /* PhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056513331EF489C0009EA38F /* PhotoEditorViewController.xib */; };
-		347ECED9205BD4E900F32ED6 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0565132D1EF489C0009EA38F /* icomoon.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -275,7 +274,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347ECED9205BD4E900F32ED6 /* icomoon.ttf in Resources */,
 				3475197B203DAF2600A8A958 /* StickersViewController.xib in Resources */,
 				3475197C203DAF2600A8A958 /* ColorCollectionViewCell.xib in Resources */,
 				3475197D203DAF2600A8A958 /* EmojiCollectionViewCell.xib in Resources */,
