@@ -17,5 +17,5 @@ with the ability to scale and rotate objects
   s.source_files = "Photo Editor/Photo Editor/**/*.{swift}"
   s.exclude_files = "Photo Editor/Photo Editor/**/AppDelegate.swift"
   s.resources = "Photo Editor/Photo Editor/**/*.{png,jpeg,jpg,storyboard,xib,ttf}"
-  s.resource_bundles = { 'Drops' => ["Photo Editor/Photo Editor/**/*.ttf"] }
+
 end
